@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.animated-line {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 2.5px;
+	background-color: rgb(68, 98, 163);
+	transition: width 0.3s ease-in-out;
+}
+
+.navbar-link:hover .animated-line {
+	width: 100%;
+}
+
+iframe.skiptranslate{
+  visibility: hidden !important;
+}
+
+body{
+  position: static !important;
+  top: 0;
+}
+
+.bg-nav {
+	background-color: rgba(63, 63, 161, 0.7) / 50; /* Adjust the opacity (fourth parameter) for the desired glass effect */
+	backdrop-filter: blur(10px); /* Adjust blur radius as needed */
+	-webkit-backdrop-filter: blur(10px); /* For Safari */
+}
+
+@keyframes bounce-up {
+	0%,
+	100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-8px);
+	}
+}
+
+.animate-bounce-up {
+	animation: bounce-up 1s infinite;
+}
