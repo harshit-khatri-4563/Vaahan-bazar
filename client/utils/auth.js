@@ -1,5 +1,5 @@
 // utils/auth.js
-
+//create user and store cookie and delete 
 export const setUser = (user) => {
     localStorage.setItem('user', JSON.stringify(user));
   };

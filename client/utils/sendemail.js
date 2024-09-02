@@ -1,5 +1,5 @@
 import emailjs from '@emailjs/browser';
-
+//  email service 
 const YOUR_SERVICE_ID ="service_8zzqxgz"  //change with new service id
 const YOUR_TEMPLATE_ID = "template_sodb9jm" //change with new template id
 const YOUR_PUBLIC_ID ="_bEdlo5-1Ls-69RIH"    //change with new public key
